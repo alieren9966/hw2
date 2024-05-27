@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "The Kwiz!"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/simonlovely"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-A Kids Quiz app"
+        android:textColor="@color/white"
+        android:layout_marginLeft="200dp"
+        android:fontFamily="@font/simonlovely"
+        android:textSize="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Please enter your name"
+          android:textStyle="bold"
+          android:layout_marginTop="18dp"
+          android:textSize="20sp"
+          android:layout_gravity="center_horizontal"
+          android:fontFamily="@font/altehaasgroteskbold"/>
+        
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/nameEditText"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#880ED4"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
